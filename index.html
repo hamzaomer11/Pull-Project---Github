@@ -14,13 +14,16 @@
                 <div class="container">
                     <div class="flex justify-space">
                         <div class="search" id="search-bar">
-                            <input type="text" placeholder="Search" id="search" oninput="getUser()">
+                            <input type="text" placeholder="Search" id="search">
+                        </div>
+                        <div class="search_button">
+                            <button onclick="getUser()">Fetch User Data</button>
                         </div>
                     </div>
                 </div>
                 <div class="container">
                     <div class="flex justify-space">
-                        <div class="text-space" id="scroll-container">
+                        <div class="text-space" id="scroll-container" onclick="scrollSection()">
                             <ul id="note"> </ul>
                         </div>
                     </div>
@@ -28,5 +31,6 @@
             </div>
         </div>
         <script src="pull.js" async defer></script>
+        
     </body>
 </html>
